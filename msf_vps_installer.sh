@@ -30,7 +30,7 @@ curl -L https://get.rvm.io | bash -s stable
 source ~/.rvm/scripts/rvm
 cd ~/metasploit-framework
 echo -e "${PURPLE}Now we wait...${NC}"
-rvm install ruby-2.3.3
+rvm install ruby-`cat .ruby-version`
 gem install bundler
 bundle install
 
